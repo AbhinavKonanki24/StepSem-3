@@ -1,0 +1,66 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "NumberClassifier",
+      "request": "launch",
+      "mainClass": "NumberClassifier",
+      "projectName": "New folder_bd23a61d"
+    },
+    {
+      "type": "java",
+      "name": "PrintNumbers",
+      "request": "launch",
+      "mainClass": "PrintNumbers",
+      "projectName": "New folder_bd23a61d"
+    },
+    {
+      "type": "java",
+      "name": "DayName",
+      "request": "launch",
+      "mainClass": "DayName",
+      "projectName": "New folder_bd23a61d"
+    },
+    {
+      "type": "java",
+      "name": "PrimeChecker",
+      "request": "launch",
+      "mainClass": "PrimeChecker",
+      "projectName": "New folder_bd23a61d"
+    },
+    {
+      "type": "java",
+      "name": "VotingEligibility",
+      "request": "launch",
+      "mainClass": "VotingEligibility",
+      "projectName": "New folder_bd23a61d"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "New folder_bd23a61d"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Dell/New folder",
+      "program": "c:/Users/Dell/New folder/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
