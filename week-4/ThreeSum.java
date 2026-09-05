@@ -1,17 +1,14 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 public class ThreeSum {
     static int[][] threeSum(int[] nums) {
         Arrays.sort(nums);
         List<int[]> triplets = new ArrayList<>();
-
         for (int i = 0; i < nums.length - 2; i++) {
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
-
             int left = i + 1;
             int right = nums.length - 1;
             while (left < right) {
@@ -33,10 +30,8 @@ public class ThreeSum {
                 }
             }
         }
-
         return triplets.toArray(new int[triplets.size()][]);
     }
-
     public static void main(String[] args) {
         int[] nums = {-1, 0, 1, 2, -1, -4};
         int[][] result = threeSum(nums);
