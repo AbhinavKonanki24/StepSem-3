@@ -6,7 +6,6 @@ public class VotingEligibility {
             System.out.println("Not eligible to vote");
         }
     }
-
     public static void main(String[] args) {
         checkVotingEligibility(20);
     }

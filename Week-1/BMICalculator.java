@@ -1,7 +1,5 @@
 import java.util.Random;
-
 public class BMICalculator {
-
     static String getBmiStatus(double bmi) {
         if (bmi < 18.5)
             return "Underweight";
@@ -12,13 +10,20 @@ public class BMICalculator {
         else
             return "Obese";
     }
-
     static void printWellnessReport(double[] heights, double[] weights) {
+        if (heights == null || weights == null || heights.length != weights.length) {
+            System.out.println("Invalid wellness data");
+            return;
+        }
         System.out.println("Person\tHeight\tWeight\tBMI\tStatus");
-
         for (int i = 0; i < heights.length; i++) {
+            if (heights[i] <= 0 || weights[i] < 0
+                    || Double.isNaN(heights[i]) || Double.isInfinite(heights[i])
+                    || Double.isNaN(weights[i]) || Double.isInfinite(weights[i])) {
+                System.out.println("Invalid wellness data");
+                return;
+            }
             double bmi = weights[i] / (heights[i] * heights[i]);
-
             System.out.printf("%d\t%.2f\t%.1f\t%.2f\t%s%n",
                     i + 1,
                     heights[i],
@@ -27,20 +32,15 @@ public class BMICalculator {
                     getBmiStatus(bmi));
         }
     }
-
     public static void main(String[] args) {
         int n = 10;
-
         double[] heights = new double[n];
         double[] weights = new double[n];
-
         Random random = new Random();
-
         for (int i = 0; i < n; i++) {
             heights[i] = 1.5 + random.nextDouble() * 0.5;
             weights[i] = 50 + random.nextInt(51);
         }
-
         printWellnessReport(heights, weights);
     }
 }

@@ -8,7 +8,6 @@ public class NumberClassifier {
             System.out.println("Zero");
         }
     }
-
     public static void main(String[] args) {
         classifyNumber(-4);
     }

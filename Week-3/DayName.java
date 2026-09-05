@@ -26,7 +26,6 @@ public class DayName {
                 System.out.println("Invalid day number");
         }
     }
-
     public static void main(String[] args) {
         printDayName(3);
     }
