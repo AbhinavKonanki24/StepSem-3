@@ -9,6 +9,10 @@ public class Playlist {
         this.count = 0;
     }
 
+    public Playlist() {
+        this(20);
+    }
+
     public void addSong(String song) {
         if (song == null) {
             return;

@@ -7,6 +7,10 @@ public class TrafficLight {
         this.color = "RED";
     }
 
+    public TrafficLight() {
+        this("TL-1");
+    }
+
     public String next() {
         if ("RED".equalsIgnoreCase(color)) {
             color = "GREEN";

@@ -7,6 +7,10 @@ public class AttendanceSheet {
         this.count = 0;
     }
 
+    public AttendanceSheet() {
+        this(50);
+    }
+
     public void markPresent(String name) {
         if (name == null || name.trim().isEmpty()) {
             return;

@@ -9,6 +9,10 @@ public class Cart {
         this.count = 0;
     }
 
+    public Cart(int maxItems) {
+        this("CART-DEFAULT", maxItems);
+    }
+
     public void addItem(int price) {
         if (price < 0) {
             System.out.println("Price cannot be negative");

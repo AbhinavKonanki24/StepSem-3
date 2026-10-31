@@ -7,6 +7,10 @@ public class PiggyBank {
         this.savings = 0;
     }
 
+    public PiggyBank() {
+        this("PB-1");
+    }
+
     public void deposit(int amount) {
         if (amount <= 0) {
             System.out.println("Deposit rejected: amount must be positive");

@@ -7,6 +7,10 @@ public class Scorecard {
         this.recordedCount = 0;
     }
 
+    public Scorecard() {
+        this(10);
+    }
+
     public void recordAnswer(boolean isCorrect) {
         if (recordedCount < answers.length) {
             answers[recordedCount++] = isCorrect;

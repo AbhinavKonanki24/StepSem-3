@@ -7,6 +7,10 @@ public class Character {
         this.health = this.maxHealth;
     }
 
+    public Character() {
+        this(100);
+    }
+
     public void takeDamage(int amount) {
         if (amount <= 0) {
             return;
